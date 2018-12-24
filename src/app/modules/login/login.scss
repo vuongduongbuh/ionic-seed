@@ -1,0 +1,10 @@
+.cb-login {
+  &__list {
+    margin-top: 5vh;
+  }
+
+  .cb-invalid-feedback {
+    color: rgb(223, 62, 62);
+    font-size: 1rem;
+  }
+}

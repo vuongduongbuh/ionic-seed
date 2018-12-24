@@ -2,6 +2,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@cb-shared/*": [
+        "src/app/shared/*"
+      ],
+      "@cb-store/*": [
+        "src/app/store/*"
+      ],
+      "@cb-services/*": [
+        "src/app/services/*"
+      ],
+      "@cb-constants": [
+        "src/app/app.constant"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

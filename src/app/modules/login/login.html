@@ -1,0 +1,28 @@
+<ion-content padding center text-center class="cb-login">
+  <ion-list class="cb-login__list">
+    <ion-item>
+      <ion-img src="/assets/icon/logo.png"></ion-img>
+    </ion-item>
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <ion-item>
+        <ion-input placeholder="Username" #userName="ngModel" [(ngModel)]="initData.user_name" ngModel name="user_name"
+          required [class.is-invalid]="userName.invalid && (userName.touched || loginForm.submitted) && userName.errors.required"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="userName.invalid && (userName.touched || loginForm.submitted) && userName.errors.required"
+        class="cb-invalid-feedback">
+        Please fill out this field
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Password" type="password" #password="ngModel" [(ngModel)]="initData.password" ngModel
+          name="password" required [class.is-invalid]="password.invalid && (password.touched || loginForm.submitted) && password.errors.required"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="password.invalid && (password.touched || loginForm.submitted) && password.errors.required"
+        class="cb-invalid-feedback">
+        Please fill out this field
+      </ion-item>
+
+      <ion-button type="submit" expand="full" fill="solid">Login</ion-button>
+    </form>
+  </ion-list>
+  <ion-button expand="full" fill="solid">Register</ion-button>
+</ion-content>
