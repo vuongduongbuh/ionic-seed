@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import * as common from '@cb-store/common/common.actions';
-import { CommonService } from '@cb-store/common/common.service';
-import * as fromRoot from '@cb-store/store';
+import * as common from '@dv-store/common/common.actions';
+import { CommonService } from '@dv-store/common/common.service';
+import * as fromRoot from '@dv-store/store';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
 import { of } from 'rxjs';

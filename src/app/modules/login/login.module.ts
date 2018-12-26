@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
-import { Login } from './login';
+import { DVLogin } from './login';
 
 @NgModule({
   imports: [
@@ -14,10 +14,10 @@ import { Login } from './login';
     RouterModule.forChild([
       {
         path: '',
-        component: Login
+        component: DVLogin
       }
     ])
   ],
-  declarations: [Login]
+  declarations: [DVLogin]
 })
-export class LoginModule {}
+export class DVLoginModule {}

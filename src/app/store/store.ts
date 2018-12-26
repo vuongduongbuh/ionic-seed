@@ -1,7 +1,7 @@
 import { environment } from './../app.constant';
 import { ActionReducer, ActionReducerMap, State } from '@ngrx/store';
-import * as fromCommon from '@cb-store/common/common.reducer';
-import * as fromAccount from '@cb-store/account/account.reducer';
+import * as fromCommon from '@dv-store/common/common.reducer';
+import * as fromAccount from '@dv-store/account/account.reducer';
 import { storeLogger } from 'ngrx-store-logger';
 import { createSelector } from 'reselect';
 

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { CBHttpService } from '@cb-services/http.service';
+import { DVHttpService } from '@dv-shared/services/http.service';
 
 @Injectable()
 export class CommonService {
-  constructor(private httpService: CBHttpService) {}
+  constructor(private httpService: DVHttpService) {}
 
   getCountries() {
     return this.httpService.get('aaaa');

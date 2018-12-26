@@ -1,8 +1,8 @@
 import { Http, RequestOptions, XHRBackend } from '@angular/http';
 import { Store } from '@ngrx/store';
 
-import * as fromRoot from '@cb-store/store';
-import { InterceptedHttp } from '@cb-services/http.interceptor';
+import * as fromRoot from '@dv-store/store';
+import { InterceptedHttp } from './http.interceptor';
 
 export function httpFactory(
   xhrBackend: XHRBackend,

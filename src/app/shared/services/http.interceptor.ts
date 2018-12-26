@@ -10,7 +10,7 @@ import {
   Response
 } from '@angular/http';
 import { Store } from '@ngrx/store';
-import * as fromRoot from '@cb-store/store';
+import * as fromRoot from '@dv-store/store';
 import { Observable } from 'rxjs';
 
 @Injectable()

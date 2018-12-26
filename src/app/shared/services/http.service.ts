@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http, Response } from '@angular/http';
-import { AppConstants } from '@cb-constants';
+import { AppConstants } from '@dv-constants';
 import { Storage } from '@ionic/storage';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable()
-export class CBHttpService {
+export class DVHttpService {
   public header: any;
   public baseURL: string = AppConstants.API_ENDPOINT;
   constructor(private http: Http, private storage: Storage) {}

@@ -8,16 +8,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    loadChildren: './modules/home/home.module#HomeModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './modules/list/list.module#ListModule'
-  },
-  {
     path: 'login',
-    loadChildren: './modules/login/login.module#LoginModule'
+    loadChildren: './modules/login/login.module#DVLoginModule'
+  },
+  {
+    path: 'home',
+    loadChildren: './modules/home/home.module#DVHomeModule'
   }
 ];
 
