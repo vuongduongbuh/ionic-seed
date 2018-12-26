@@ -20,4 +20,4 @@ import { Home } from './home';
   ],
   declarations: [Home]
 })
-export class HomeModule {}
+export class DVHomeModule {}

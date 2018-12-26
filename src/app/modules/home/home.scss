@@ -1,4 +1,10 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+.dv-login {
+  &__list {
+    margin-top: 5vh;
+  }
+
+  .dv-invalid-feedback {
+    color: rgb(223, 62, 62);
+    font-size: 1rem;
+  }
 }

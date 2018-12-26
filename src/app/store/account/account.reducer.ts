@@ -1,4 +1,4 @@
-import * as account from '@cb-store/account/account.actions';
+import * as account from '@dv-store/account/account.actions';
 
 export interface State {
   loading: Boolean;

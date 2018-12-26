@@ -1,19 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { HttpModule } from '@angular/http';
-
-import { CBHttpService } from './services/http.service';
-import { CBGlobalService } from './services/global.service';
-import { CBStoreModule } from './store/store.module';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-import { IonicStorageModule } from '@ionic/storage';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { IonicStorageModule } from '@ionic/storage';
 
-import { AppComponent } from './app.component';
+import { DVThemeModule } from './theme/theme.module';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { DVSharedModule } from './shared/shared.module';
+import { DVStoreModule } from './store/store.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,14 +20,13 @@ import { AppRoutingModule } from './app-routing.module';
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
     AppRoutingModule,
-    CBStoreModule,
-    HttpModule
+    DVStoreModule,
+    DVSharedModule,
+    DVThemeModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    CBHttpService,
-    CBGlobalService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

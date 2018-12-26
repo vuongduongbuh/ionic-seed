@@ -2,6 +2,6 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
 @Injectable()
-export class CBGlobalService {
+export class DVGlobalService {
   constructor(private http: Http) {}
 }

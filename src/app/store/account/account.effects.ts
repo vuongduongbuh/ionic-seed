@@ -1,8 +1,8 @@
 import { Storage } from '@ionic/storage';
 import { Injectable } from '@angular/core';
-import * as account from '@cb-store/account/account.actions';
-import { AccountService } from '@cb-store/account/account.service';
-import * as fromRoot from '@cb-store/store';
+import * as account from '@dv-store/account/account.actions';
+import { AccountService } from '@dv-store/account/account.service';
+import * as fromRoot from '@dv-store/store';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
 import { of } from 'rxjs';

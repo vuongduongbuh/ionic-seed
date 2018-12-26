@@ -3,16 +3,13 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@cb-shared/*": [
+      "@dv-shared/*": [
         "src/app/shared/*"
       ],
-      "@cb-store/*": [
+      "@dv-store/*": [
         "src/app/store/*"
       ],
-      "@cb-services/*": [
-        "src/app/services/*"
-      ],
-      "@cb-constants": [
+      "@dv-constants": [
         "src/app/app.constant"
       ]
     },

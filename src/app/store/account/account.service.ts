@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { CBHttpService } from '@cb-services/http.service';
 import * as _ from 'lodash';
 
 import { ApiUrls } from '../../app.constant';
+import { DVHttpService } from '@dv-shared/services/http.service';
 
 interface ConfirmOTPData {
   phone: number;
@@ -14,7 +14,7 @@ interface ConfirmOTPData {
 
 @Injectable()
 export class AccountService {
-  constructor(private httpService: CBHttpService) {}
+  constructor(private httpService: DVHttpService) { }
 
   getUserInfo() {
     return this.httpService.get(`${ApiUrls.ACCOUNT.USER_GET}`);
@@ -66,7 +66,7 @@ export class AccountService {
   resetPassword(params) {
     return this.httpService.get(
       `${ApiUrls.ACCOUNT.RESET_PASSWORD}/${params.token}/${params.email}/${
-        params.password
+      params.password
       }`
     );
   }

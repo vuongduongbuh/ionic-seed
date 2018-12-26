@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
-  selector: 'app-root',
+  selector: 'dv-root',
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
@@ -14,11 +14,6 @@ export class AppComponent {
       title: 'Home',
       url: '/home',
       icon: 'home'
-    },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
     }
   ];
 

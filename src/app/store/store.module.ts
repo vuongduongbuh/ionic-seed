@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { CommonEffects } from '@cb-store/common/common.effects';
-import { CommonService } from '@cb-store/common/common.service';
-import { metaReducers, reducers } from '@cb-store/store';
+import { CommonEffects } from '@dv-store/common/common.effects';
+import { CommonService } from '@dv-store/common/common.service';
+import { metaReducers, reducers } from '@dv-store/store';
 
 // Import services
 // Define effects
@@ -24,4 +24,4 @@ const APP_SERVICES = [CommonService, AccountService];
   declarations: [],
   exports: []
 })
-export class CBStoreModule {}
+export class DVStoreModule {}

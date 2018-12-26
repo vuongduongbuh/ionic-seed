@@ -1,4 +1,4 @@
-import * as common from '@cb-store/common/common.actions';
+import * as common from '@dv-store/common/common.actions';
 
 export interface State {
   loading: Boolean;
